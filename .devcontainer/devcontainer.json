@@ -5,7 +5,11 @@
   "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && script/setup",
   "postStartCommand": "script/bootstrap",
   "containerEnv": {
-    "PYTHONASYNCIODEBUG": "1"
+    "PYTHONASYNCIODEBUG": "1",
+    "SUPERVISOR":"192.168.2.186:80",
+    "SUPERVISOR_TOKEN":"38d69f46c1e3af77251183eddf1f227673245703ef8f3e3ad3df1124de76dfe0e1ec3c41278552eadcfcd154761818cad3492970e7e5d8ae",
+    //"SUPERVISOR":"192.168.2.101:80",
+    //"SUPERVISOR_TOKEN":"c3fd14cf1644ae9d56e781298b6dcffe083e32feacbd6e942588c180fc3d6795fad6c99e566257e4cc48db122e59868ecfb456fb95b9125f"
   },
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
